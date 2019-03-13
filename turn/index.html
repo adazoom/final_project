@@ -1,14 +1,71 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
 	<head>
 	<script src="node_modules/jquery.js"></script>
 	<script src="node_modules/socket.io.js"></script>
 	<script src="node_modules/turnjs/turn.js"></script>
-	
+
+	<style type="text/css">
+		#alignment {
+			position: absolute;
+			top: 0;
+			left: 0;
+
+			width: 100%;
+			height: 100%;
+
+			/* This is a modal */
+			pointer-events: none
+		}
+		#alignment .guide {
+			display: inline-block;
+			background: red;
+		}
+
+		#alignment .left-border {
+			width: 3px;
+			height: 600px;
+
+			position: absolute;
+		}
+			#alignment .center-dot {
+			width: 10px;
+			height: 10px;
+			border-radius: 10px;
+
+			position: absolute;
+			top: 290px;
+		}
+		#alignment .right-border {
+			width: 3px;
+			height: 600px;
+
+			position: absolute;
+		}
+		#align-button {
+			position: absolute;
+			top:  10px;
+			right: 100px;
+
+			padding: 10px;
+		}
+
+
+		/* IMPORTANT: Customize Guide Positions*/
+		.left-border {
+			left: 370px;
+		}
+		.center-dot {
+			left: 700px;
+		}
+		.right-border {
+			left: 1065px;
+		}
+	</style>
 
 	</head>
 
-	<div id="flipbook" style="left:300px;"> 
+	<div id="flipbook" style="left:300px;">
 	  <div>
 	  	<img src="public/book/1.jpg" alt="1" width="400" height="600">
 	  </div>
@@ -67,5 +124,15 @@
 	  	<img src="public/book/19.jpg" alt="19" width="400" height="600">
 	  </div>
 	</div>
+
+	<input id="align-button" type="button" value="Calibrate"/>
+
+	<div id="alignment">
+		<div class="guide left-border"></div>
+		<div class="guide center-dot"></div>
+		<div class="guide right-border"></div>
+	</div>
+
+
 	<script src="node_modules/main.js"></script>
 </html>
