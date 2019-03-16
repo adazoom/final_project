@@ -27,3 +27,4 @@
 
 - For Webcam support, please run 
 'python webcam.py' in webcam repository
+please follow the instruction to install Dlib Library here:https://www.pyimagesearch.com/2018/01/22/install-dlib-easy-complete-guide/
