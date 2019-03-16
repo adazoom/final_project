@@ -17,6 +17,10 @@
   ** main.py
   This code  already sets up the server and the set up process. 
   Please not that the address of the camera might change as it is depending on the driver installed. Therefore, please provide your own data in uvc.Capture()
+  
+  ** evaluate.py 
+  This code evaluate the pupil detection algorithm by comparing the results with ground truth data.
+  https://www.mpi-inf.mpg.de/departments/computer-vision-and-multimodal-computing/research/gaze-based-human-computer-interaction/labelled-pupils-in-the-wild-lpw/
 
 - Pupil detection using Fast Radio Sysmetric algoirthm is in matlab folder, please run 
 'pupil_detection.m' in matlab
