@@ -1,6 +1,7 @@
 # Gaze-Detection
 
 - Implementation of the working page turning system:
+
   Before running code please initiate the server by running:
   'python websocket.py'
 
