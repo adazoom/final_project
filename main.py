@@ -35,8 +35,8 @@ def camera_process(event_queue):
     # Grab the camera
     dev_list = uvc.device_list()
     print(dev_list)
-    cap = uvc.Capture(dev_list[0]["uid"])
-    # cap = uvc.Capture("20:10")
+    #cap = uvc.Capture(dev_list[0]["uid"])
+    cap = uvc.Capture("20:29")
 
     # controls_dict = dict([(c.display_name, c) for c in cap.controls])
     # controls_dict['Auto Exposure Mode'].value = 1
