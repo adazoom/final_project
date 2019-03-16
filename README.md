@@ -6,13 +6,18 @@ Before running code please initiate the server by running:
 To run code please run: 
 'python main.py'
 
-Our library relies on Python3, Flask, libuvc and pyuvc. 
+To open the page turning system please open the 
+'index.html' in Page turning software folder
+
+Our library relies on Python3, Flask, libuvc and pyuvc and dlib. 
 Please follow the setup instructions listed in the libuvc and pyuvc libraries carefully.
 
 ** main.py
 This code  already sets up the server and the set up process. 
 Please not that the address of the camera might change as it is depending on the driver installed. Therefore, please provide your own data in uvc.Capture()
 
+- Pupil detection using Fast Radio Sysmetric algoirthm is in matlab folder, please run 
+'pupil_detection.m' in matlab
 
-## Pupil detection using Fast Radio Sysmetric algoirthm are inside matlab folder
-## For Webcam support: run the webcam.py in webcam repository
+- For Webcam support, please run 
+'python webcam.py' in webcam repository
